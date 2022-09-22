@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #c6cfd4;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 50;
+    text-align: center;
+    color: lime;
+    background-color: #fff;
+}
+
+.textColor {
+    font-weight: 700;
+    color: rgb(0, 255, 0);
+}
+
+.container {
+    border: 2px solid rgb(235, 242, 246);
+    border-top: none;
+    border-right: none;
+    width: 40%;
+    height: 80%;
+    position: relative;
+    left: 30%;
+    right: 50%;
+    padding: 30px 40px;
+    max-width: 450%;
+    overflow-y: scroll;
+}
+
+#newTask {
+    background-color: #fff;
+    padding: 30px 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#newTask input {
+    text-decoration: none;
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    position: relative;
+    padding: 12px;
+    color: #111;
+    font-weight: 500;
+    border: 2px solid #d1d3d4;
+}
+
+#newTask button {
+    width: 15%;
+    height: 45px;
+    float: right;
+    border-radius: 5px;
+    font-weight: 500;
+    position: relative;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+#tasks {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.task {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+
+.task span {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.task button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    width: 40px;
+    height: 100%;
+    border: none;
+}
+
+#delect,
+.Edit {
+    justify-content: none;
+    cursor: pointer;
+}
+
+.Edit {
+    margin-right: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
